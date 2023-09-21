@@ -267,7 +267,6 @@ a {
 	-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	text-decoration: none;
-	border-bottom: dotted 1px;
 }
 
 a:hover {
@@ -3261,6 +3260,8 @@ table.alt tbody tr td {
 	color: inherit;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 	color: #ffffff;
+	text-decoration: none;
+	/* Remove underline */
 }
 
 .wrapper.style1 strong,
@@ -3481,6 +3482,8 @@ table.alt tbody tr td {
 .wrapper.style2 a {
 	color: inherit;
 	border-bottom-color: #d6d6d6;
+	text-decoration: none;
+	/* Remove underline */
 }
 
 .wrapper.style2 a:hover {
@@ -3705,6 +3708,8 @@ table.alt tbody tr td {
 .wrapper.style3 a {
 	color: inherit;
 	border-bottom-color: #c6c6c6;
+	text-decoration: none;
+	/* Remove underline */
 }
 
 .wrapper.style3 a:hover {
@@ -3979,6 +3984,8 @@ table.alt tbody tr td {
 	color: inherit;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 	color: #ffffff;
+	text-decoration: none;
+	/* Remove underline */
 }
 
 #header strong,
@@ -4090,13 +4097,26 @@ table.alt tbody tr td {
 	height: 2.0em;
 }
 
-.badge a {
-	text-decoration: none;
+.actions {
+	display: flex;
+	flex-direction: row;
+	/* Below sets up your display method: flex-start|flex-end|space-between|space-around */
+	justify-content: flex-start;
+	/* Below removes bullets and cleans white-space */
+	list-style: none;
+	padding: 0;
+	/* Bonus: forces no word-wrap */
+	white-space: nowrap;
+}
+
+.badge {
 	display: inline-block;
+	margin-right: 1em;
 }
 
 .badge img {
-	height: 3em;
+	height: auto;
+	max-height: 3em;
 }
 
 img {
@@ -4314,6 +4334,8 @@ body.is-preload #header .image img {
 #footer a {
 	color: inherit;
 	border-bottom-color: #c6c6c6;
+	text-decoration: none;
+	/* Remove underline */
 }
 
 #footer a:hover {
@@ -4349,6 +4371,8 @@ body.is-preload #header .image img {
 
 #footer a {
 	color: inherit;
+	text-decoration: none;
+	/* Remove underline */
 }
 
 #footer .copyright {
