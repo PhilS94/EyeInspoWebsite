@@ -4076,9 +4076,18 @@ table.alt tbody tr td {
 /* Custom here */
 .appIcon {
 	display: flex;
-	margin: 1em;
+	margin-left: auto;
 	width: 2.5em;
 	height: 2.5em;
+}
+
+.titleHeader {
+	display: flex;
+	margin-right: auto;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	height: 2.0em;
 }
 
 .badge a {
